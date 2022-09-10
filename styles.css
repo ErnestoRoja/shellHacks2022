@@ -50,3 +50,35 @@
     border-radius: 30px;
 }
 
+.input-content {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+}
+
+.user-input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+}
+
+.submit-button {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, rgb(207, 142, 2), rgb(241, 224, 176));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login {
+    left: 150px;
+    
+}
