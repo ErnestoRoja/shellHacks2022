@@ -1,4 +1,4 @@
-let signButton = cocument.getElementById("sign-button");
+let signButton = document.getElementById("sign-button");
 let registerButton = document.getElementById("register-button");
 
 signButton.addEvenetListener("click", (e) =>{
