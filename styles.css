@@ -1,10 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .main {
-    background-color: grey;
+
 }
 
 .main_container {
-    background-color: grey;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/mountains.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
 
+.main-box {
+    width: 600px;
+    height: 750px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
 }
 
 .main_content {
