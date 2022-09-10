@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .main {
@@ -17,12 +18,13 @@
 }
 
 .main-box {
-    width: 600px;
-    height: 750px;
+    width: 450px;
+    height: 600px;
     position: relative;
     margin: 6% auto;
     background: white;
     padding: 5px;
+    border-radius: 30px;
 }
 
 .button-box {
@@ -59,7 +61,7 @@
 .user-input {
     width: 100%;
     padding: 10px 0;
-    margin: 5px 0;
+    margin: 10px 0;
     border-left: 0;
     border-top: 0;
     border-right: 0;
@@ -78,7 +80,10 @@
     border-radius: 30px;
 }
 
-#login {
-    left: 150px;
-    
+#sign-in {
+    left: 90px;
+}
+
+#register {
+    left: 500px;
 }

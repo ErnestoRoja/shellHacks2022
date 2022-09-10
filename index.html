@@ -12,17 +12,26 @@
         <div class="main-container">
             <div class="main-box">
                <div class="button-box">
-                    <button type="button" class="toggle-btn">Login</button>
-                    <button type="button" class="toggle-btn">Register</button>
-                    hello hello
+                    <div id="button"></div>
+                    <button type="button" class="toggle-button">Sign In</button>
+                    <button type="button" class="toggle-button">Register</button>
                </div>
                <div class="media-icons">
 
                </div>
-               <form class="input-content">
-                <input type="text" class="user-input" placeholder="Username">
+               <form id="sign-in" class="input-content">
+                <input type="text" class="user-input" placeholder="Email">
                 <input type="text" class="user-input" placeholder="Password">
-                <button type="submit" class="submit-button">Login</button>
+                <button type="submit" class="submit-button">Sign In</button>
+               </form>
+
+               <form id="register" class="input-content">
+                <input type="text" class="user-input" placeholder="First">
+                <input type="text" class="user-input" placeholder="Last">
+                <input type="text" class="user-input" placeholder="Email">
+                <input type="text" class="user-input" placeholder="Password">
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-button">Register</button>
                </form>
             </div>
         </div>
