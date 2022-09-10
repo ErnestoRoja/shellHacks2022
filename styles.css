@@ -7,7 +7,7 @@
 
 }
 
-.main_container {
+.main-container {
     height: 100%;
     width: 100%;
     background-image: url(/images/mountains.jpg);
@@ -29,8 +29,24 @@
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px red;
+    box-shadow: 0 0 20px 9px #f5e6a6;
     border-radius: 30px;
 }
 
+.toggle-button {
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    position: relative;
+}
+
+#button {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(207, 142, 2), rgb(241, 224, 176));
+    border-radius: 30px;
+}
 
