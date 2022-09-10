@@ -25,24 +25,12 @@
     padding: 5px;
 }
 
-.main_content {
-
-}
-
-#email_box {
-   
-}
-
-#password_box {
-   
-}
-
-.login_button {
-
-}
-
-.register_button {
-
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px red;
+    border-radius: 30px;
 }
 
 
