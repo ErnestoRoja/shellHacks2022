@@ -11,7 +11,7 @@
 .main-container {
     height: 100%;
     width: 100%;
-    background-image: url(/images/mountains.jpg);
+    background-image: url(./images/mountains.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
