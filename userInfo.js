@@ -25,7 +25,6 @@ function signIn() {
     var foundEmail = 0;
     console.log("hello");
     console.log(document.getElementById('email-input').value);
-    console.log(userInfo.get(document.getElementById('email-input').value).firstName);
     console.log(userInfo.size);
     userInfo.forEach(function(key) {
         console.log("hello");
