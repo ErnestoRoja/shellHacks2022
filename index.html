@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="homePage.css"/>
     <script defer src="homePage.js"></script>
     <title>Login Page</title>
+=======
+    <link rel="stylesheet" href="styles.css"/>
+    <title>SHELLHACKS 2022</title>
+>>>>>>> 93cfddc78310966b7d1ad110ec34dff5da89e0c7
 </head>
 <body>
     <div class="main">
@@ -16,6 +21,7 @@
                     <div id="button"></div>
                     <button type="button" class="toggle-button" onclick="login()">Sign In</button>
                     <button type="button" class="toggle-button" onclick="register()">Register</button>
+                    <script defer src="homePage.js"></script>
                </div>
                <div class="media-icons">
                 <img src="./images/capitalOne.png">
@@ -24,7 +30,11 @@
                <form id="sign-in" class="input-content">
                 <input type="text" id="email-input" class="user-input" placeholder="Email" required>
                 <input type="text" id="password-input" class="user-input" placeholder="Password" required>
+<<<<<<< HEAD
                 <button type="submit" class="submit-button" onclick="changeToHome()">Sign In</button>
+=======
+                <button type="submit" id="sign-button" class="submit-button" onclick="signIn()">Sign In</button>
+>>>>>>> 93cfddc78310966b7d1ad110ec34dff5da89e0c7
                </form>
 
                <form id="register" class="input-content">
@@ -33,8 +43,9 @@
                 <input type="text" id="new-email-input" class="user-input" placeholder="Email" required>
                 <input type="text" id="new-password-input" class="user-input" placeholder="Password" required>
                 <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
-                <button type="submit" class="submit-button">Register</button>
+                <button type="submit" id="register-button" class="submit-button" onclick="newUser()">Register</button>
                </form>
+               <script defer src="userInfo.js"></script>
             </div>
         </div>
     </div>
