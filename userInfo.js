@@ -6,30 +6,36 @@ class User {
         var subscriptions = new Array();
     }
 }
-/*
-var createdMap;
-if (!createdMap) {
-    createdMap = true;
+/* ATTEMPT TO STORE MAP OF DATA IN localStorage
+var userInfo = new Map();
+if (localStorage.getItem('createdMap') == null) {
+    var createdMap = false;
+    localStorage.setItem('createdMap', createdMap);
+}
+var check = localStorage.getItem('createdMap');
+if (check == false) {
+    localStorage.setItem('createdMap', true)
     alert("initial case");
     var userInfo = new Map();
     var user = new User("admin", "admin", "admin");
     userInfo.set("admin", user);
     alert(userInfo.get("admin").firstName);
     localStorage.setItem('userInfo', userInfo);
-
 }
 */
-function newUser() {
-    // FIXME
-   // if (userInfo.get(document.getElementById('new-email-input').value).firstName != undefined) {
-        //print something
-     //   console.log("reached");
-      //  return;
-   // }
 
-    var userInfo = new Map();
+function newUser() {
+    /* Attempt to Fix Duplicate Cases
+    //FIXME
+    if (userInfo.get(document.getElementById('new-email-input').value).firstName != undefined) {
+        //print something
+        console.log("reached");
+        return;
+    }
+    */
+    
     userInfo = localStorage.getItem('userInfo');
-    alert(localStorage.getItem('userInfo').get("admin").firstName);
+    //alert(localStorage.getItem('userInfo').get("admin").firstName);
     var user = new User(document.getElementById('first-name-input').value, document.getElementById('last-name-input').value, document.getElementById('new-password-input').value);
     var testString = document.getElementById('new-email-input').value;
     userInfo.set(testString, user);
@@ -38,6 +44,12 @@ function newUser() {
 }
 
 function signIn() {
+    // Master Login
+    if (document.getElementById('email-input').value == "admin" && document.getElementById('password-input').value == "admin") {
+        window.open('main.html');
+        return;
+    }
+    
     var foundEmail = 0;
     console.log(document.getElementById('email-input').value);
     console.log(localStorage.getItem('userInfo').size);
@@ -62,5 +74,5 @@ function signIn() {
             alert("incorrect password");
         }
     }
-
+    
 }
