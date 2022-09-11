@@ -12,45 +12,49 @@
 <body>
     <div class="container">
         <header class="navbar">
-            <a href="main.html">
-                <i class="fa-duotone fa-arrow-left-long-to-line"></i>
+            <a href="main.html" class="back-button">
+                <i class="fa-sharp fa-solid fa-rotate-left return-gradient"></i>
             </a>
 
             <div class="container-info">
-                <h1 class="name">Default</h1>
+                <h1 class="name">New Subscription</h1>
             </div>
         </header>
 
         <section class="all-details">
 
             <div class="each-detail">
-                <i class="fa-solid fa-input-text"></i>
-                <p class="subscription-name">Default</p>
+                <i class="fa-sharp fa-solid fa-file-signature icon-gradient"></i>
+                <input type="text" class="subscription-name" placeholder="Subscription Name" required></p>
             </div>
 
             <div class="each-detail">
-                <i class="fa-solid fa-money-check-dollar"></i>
-                <p class="subscription-cost">Default</p>
+                <i class="fa-solid fa-money-check-dollar icon-gradient"></i>
+                <input type="number" class="subscription-cost" placeholder="Subscription Cost" required></p>
             </div>
 
             <div class="each-detail">
-                <i class="fa-solid fa-file-invoice-dollar"></i>
-                <p class="subscription-date">Default</p>
+                <i class="fa-solid fa-file-invoice-dollar icon-gradient"></i>
+                <input type="date" class="subscription-date" placeholder="Date" required>
             </div>
 
             <div class="each-detail">
-                <i class="fa-solid fa-calendar-clock"></i>
-                <p class="subscription-cycle">Default</p>
+                <i class="fa-regular fa-calendar icon-gradient"></i>
+                <input type="radio" class="cycle-option" value="Monthly">
+                <label for="cycle-monthly">Monthly</label>
+
+                <input type="radio" class="cycle-option" value="Yearly">
+                <label for="cycle-yearly">Yearly</label>
             </div>
         </section>
 
         <a href="#">
-            <section class="edit-name">
-                <div class="edit-button">
-                    <i class="fa-solid fa-gear"></i>
+            <section class="add-section">
+                <div class="add-button">
+                    <script defer src="homePage.js"></script>
+                    <i class="fa-solid fa-plus icon-gradient" onclick="changeToHome()"></i>
                 </div>
             </section>
-            
         </a>
     </div>
 </body>

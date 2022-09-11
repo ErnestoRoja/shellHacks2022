@@ -13,27 +13,82 @@
     <div class="container">
         <div class="navbar">
             <img src="./images/default-icon.jpg" class="profile-icon">
-            <div class="welcome-message">Welcome, "name"</div>
+            <div class="welcome-message">Welcome, user!</div>
 
             <form class="search-bar">
                 <input type="search-name" class="contact-search" name="search-area" placeholder="Search">
             </form>
 
-            <a href="#">
-                <button type="button" class="add-button" onclick="changeToDetails()">
+            <a href="details.html">
+                <button type="button" class="add-button">
                     <span class="button-text">Add</span>
                 </button>
             </a>
             
             <ul>
-                <li><a href="#">LOG OUT</a></li>
+                <li><a href="index.html" target="_self">
+                    <button type="button" class="logout-button">
+                        <span class="button-text">LOG OUT</span>
+                    </button>
+                </a></li>
             </ul>
         </div>
 
         <section class="subscription-container">
             <div class="collapsible">
-                
                 <ul class="subscription-list">
+                    <input type="checkbox" id="collapsible-head">
+                    <label for="collapsible-head">
+                        <div class="subscription-section">
+                            <li class="list-item">
+                                <i class="fa-brands fa-apple"></i>
+                                <p class="subscription-name">Apple Music</p>
+                            </li>
+        
+                            <li class="list-item">
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </li>
+                        </div>
+                        <hr>
+                    </label>
+
+                    <div class="collapsible-text">
+                        <div class="form-container">
+                            <form action="#">
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Name</span>
+                                        <input type="text" placeholder="Subscription Name" required>
+                                    </div>
+                                </div>
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Cost</span>
+                                        <input type="number" placeholder="Renewal Price" required>
+                                    </div>
+                                </div>
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Next Payment</span>
+                                        <input type="date" placeholder="Date" required>
+                                    </div>
+                                </div>
+                                <div class="cycle-details">
+                                    <span class="cycle-title">Cycle</span>
+
+                                    <input type="radio" name="cycle-option" value="Monthly">
+                                    <label for="cycle-monthly">Monthly</label>
+
+                                    <input type="radio" name="cycle-option" value="Yearly">
+                                    <label for="cycle-yearly">Yearly</label>
+                                    
+                                </div>
+                            </form>
+                            <div class="remove-button">
+                                <input id="remove"type="submit" value="Remove">
+                            </div>
+                        </div>
+                    </div>
                     <input type="checkbox" id="collapsible-head">
                     <label for="collapsible-head">
                         <div class="subscription-section">
@@ -43,8 +98,55 @@
                             </li>
         
                             <li class="list-item">
-                                <p class="due-date">Due Date</p>
-                                <p class="cost">Cost</p>
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </li>
+                        </div>
+                        <hr>
+                    </label>
+
+                    <div class="collapsible-text">
+                        <div class="form-container">
+                            <form action="#">
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Name</span>
+                                        <input type="text" placeholder="Subscription Name" required>
+                                    </div>
+                                </div>
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Cost</span>
+                                        <input type="number" placeholder="Renewal Price" required>
+                                    </div>
+                                </div>
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Next Payment</span>
+                                        <input type="date" placeholder="Date" required>
+                                    </div>
+                                </div>
+                                <div class="cycle-details">
+                                    <span class="cycle-title">Cycle</span>
+
+                                    <input type="radio" name="cycle-option" value="Monthly">
+                                    <label for="cycle-monthly">Monthly</label>
+
+                                    <input type="radio" name="cycle-option" value="Yearly">
+                                    <label for="cycle-yearly">Yearly</label>
+                                    
+                                </div>
+                            </form>
+                            <div class="remove-button">
+                                <input id="remove"type="submit" value="Remove">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="collapsible-head">
+                    <label for="collapsible-head">
+                        <div class="subscription-section">
+                            <li class="list-item">
+                                <i class="fa-solid fa-tv"></i>
+                                <p class="subscription-name">Netflix</p>
                             </li>
         
                             <li class="list-item">
@@ -52,8 +154,8 @@
                             </li>
                         </div>
                         <hr>
-
                     </label>
+
                     <div class="collapsible-text">
                         <div class="form-container">
                             <form action="#">

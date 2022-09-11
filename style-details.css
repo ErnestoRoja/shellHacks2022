@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #313438;
+    background-color: #5f5d5d;
     min-height: 100vh;
 }
 
@@ -20,6 +20,91 @@ body {
     padding: 2em 0;
 }
 
+.back-button {
+    font-size: 1.7em;
+    padding-left: 1em;
+    color: blue;
+}
+
+.container-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 i {
     font-size: 1.5em;
+}
+
+.all-details {
+    padding: 3em 1.5em;
+}
+
+.each-detail {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    margin-top: 2em;
+    border-radius: 20px;
+    border-radius: 18px;
+    background: #5f5d5d;
+    box-shadow:  6px 6px 6px #565454, -6px -6px 6px #696666;
+}
+
+p {
+    margin: 0;
+    padding-left: 2em;
+}
+
+.icon-gradient {
+    background: linear-gradient(90deg, rgba(17,59,154,1) 35%, rgba(163,62,62,1) 90%);
+    border-radius: 100px;
+    padding: 0.5em;
+}
+
+.return-gradient {
+    background: #fff;
+    border-radius: 100px;
+    padding: 0.2em;
+}
+
+.add-section {
+    padding: 1.5em 3.5em;
+    text-align: center;
+}
+
+.add-button {
+    color: white;
+}
+
+.subscription-name {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5% auto;
+}
+
+.subscription-cost {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5% auto;
+}
+
+.subscription-date {
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5% auto;
+}
+
+.cycle-option {
+    margin: 5% auto;
 }

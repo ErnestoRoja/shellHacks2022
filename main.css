@@ -12,11 +12,15 @@
     cursor: pointer;
 }
 
+.welcome-message {
+    font-size: 35px;
+}
+
 .add-button {
     width: 100px;
     height: 50px;
     padding: 0;
-    background: rgb(27, 143, 123);
+    background: rgb(194, 139, 36);
     border: none;
     outline: none;
     border-radius: 5px;
@@ -28,11 +32,34 @@
 }
 
 .add-button:hover {
-    background: rgb(37, 173, 128);
+    background: rgb(185, 168, 13);
 }
 
 .add-button:active {
-    background: rgb(27, 143, 123);
+    background: rgb(238, 209, 156);
+}
+
+.logout-button {
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    background: rgb(173, 171, 165);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: rgb(229, 225, 188);
+}
+
+.logout-button:active {
+    background: rgb(238, 209, 156);
 }
 
 .welcome-message {
