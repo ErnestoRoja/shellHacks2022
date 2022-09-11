@@ -4,6 +4,8 @@
     font-family: sans-serif;
 }
 
+/* Login Page */
+
 .main {
 
 }
@@ -41,6 +43,7 @@
     background: transparent;
     border: 0;
     position: relative;
+    cursor: pointer;
 }
 
 #button {
@@ -101,3 +104,5 @@
 #register {
     left: 500px;
 }
+
+/* End of Login Page */

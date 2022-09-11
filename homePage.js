@@ -13,3 +13,7 @@ function login(){
     reg.style.left = "550px";
     slider.style.left = "0px";
 }
+
+function changeToHome(){
+    window.open('main.html');
+}

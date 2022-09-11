@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <script defer src="mainPage.js"></script>
+    <script src="https://kit.fontawesome.com/c075efbdf6.js" crossorigin="anonymous"></script>
+    <title>Main Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/default-icon.jpg" class="profile-icon">
+            <div class="welcome-message">Welcome, "name"</div>
+
+            <form class="search-bar">
+                <input type="search-name" class="contact-search" name="search-area" placeholder="Search">
+            </form>
+
+            <a href="#">
+                <button type="button" class="add-button" onclick="changeToDetails()">
+                    <span class="button-text">Add</span>
+                </button>
+            </a>
+            
+            <ul>
+                <li><a href="#">LOG OUT</a></li>
+            </ul>
+        </div>
+
+        <section class="subscription-container">
+            <div class="collapsible">
+                
+                <ul class="subscription-list">
+                    <input type="checkbox" id="collapsible-head">
+                    <label for="collapsible-head">
+                        <div class="subscription-section">
+                            <li class="list-item">
+                                <i class="fa-brands fa-spotify"></i>
+                                <p class="subscription-name">Spotify</p>
+                            </li>
+        
+                            <li class="list-item">
+                                <p class="due-date">Due Date</p>
+                                <p class="cost">Cost</p>
+                            </li>
+        
+                            <li class="list-item">
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </li>
+                        </div>
+                        <hr>
+
+                    </label>
+                    <div class="collapsible-text">
+                        <div class="form-container">
+                            <form action="#">
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Name</span>
+                                        <input type="text" placeholder="Subscription Name" required>
+                                    </div>
+                                </div>
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Cost</span>
+                                        <input type="number" placeholder="Renewal Price" required>
+                                    </div>
+                                </div>
+                                <div class="user-inputs">
+                                    <div class="input-box">
+                                        <span class="details">Next Payment</span>
+                                        <input type="date" placeholder="Date" required>
+                                    </div>
+                                </div>
+                                <div class="cycle-details">
+                                    <span class="cycle-title">Cycle</span>
+
+                                    <input type="radio" name="cycle-option" value="Monthly">
+                                    <label for="cycle-monthly">Monthly</label>
+
+                                    <input type="radio" name="cycle-option" value="Yearly">
+                                    <label for="cycle-yearly">Yearly</label>
+                                    
+                                </div>
+                            </form>
+                            <div class="remove-button">
+                                <input id="remove"type="submit" value="Remove">
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
