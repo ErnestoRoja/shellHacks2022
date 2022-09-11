@@ -1,4 +1,3 @@
-var userInfo = new Map();
 class User {
     constructor(firstName, lastName, password) {
         this.firstName = firstName;
@@ -7,7 +6,19 @@ class User {
         var subscriptions = new Array();
     }
 }
+/*
+var createdMap;
+if (!createdMap) {
+    createdMap = true;
+    alert("initial case");
+    var userInfo = new Map();
+    var user = new User("admin", "admin", "admin");
+    userInfo.set("admin", user);
+    alert(userInfo.get("admin").firstName);
+    localStorage.setItem('userInfo', userInfo);
 
+}
+*/
 function newUser() {
     // FIXME
    // if (userInfo.get(document.getElementById('new-email-input').value).firstName != undefined) {
@@ -16,17 +27,21 @@ function newUser() {
       //  return;
    // }
 
+    var userInfo = new Map();
+    userInfo = localStorage.getItem('userInfo');
+    alert(localStorage.getItem('userInfo').get("admin").firstName);
     var user = new User(document.getElementById('first-name-input').value, document.getElementById('last-name-input').value, document.getElementById('new-password-input').value);
-    userInfo.set(document.getElementById('new-email-input').value, user);
+    var testString = document.getElementById('new-email-input').value;
+    userInfo.set(testString, user);
     alert("New User Login with first name: " + userInfo.get(document.getElementById('new-email-input').value).firstName);
+    localStorage.setItem('userInfo', userInfo);
 }
 
 function signIn() {
     var foundEmail = 0;
-    console.log("hello");
     console.log(document.getElementById('email-input').value);
-    console.log(userInfo.size);
-    userInfo.forEach(function(key) {
+    console.log(localStorage.getItem('userInfo').size);
+    localStorage.getItem('userInfo').forEach(function(key) {
         console.log("hello");
         console.log(document.getElementById('email-input').value);
         if (key == document.getElementById('email-input').value) {
@@ -40,7 +55,7 @@ function signIn() {
         alert("Email Not Found");
     }
     else {
-        if(userInfo.get(document.getElementById('email-input').value).password == document.getElementById('password-input')) {
+        if(localStorage.getItem('userInfo').get(document.getElementById('email-input').value).password == document.getElementById('password-input')) {
             alert("correct sign in");
         }
         else {

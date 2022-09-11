@@ -1,7 +1,9 @@
+/*
 let signButton = document.getElementById("sign-button");
 let registerButton = document.getElementById("register-button");
 
-signButton.addEvenetListener("click", (e) =>{
+
+signButton.addEventListener("click", (e) =>{
     let email = document.getElementById("email-input");
     email = email.value;
     localStorage.setItem("email", email);
@@ -9,6 +11,7 @@ signButton.addEvenetListener("click", (e) =>{
     password = password.value;
     localStorage.setItem("password", password);
 })
+
 
 registerButton.addEventListener("click", (e) => {
     let firstName = document.getElementById("first-name-input");
@@ -27,3 +30,4 @@ registerButton.addEventListener("click", (e) => {
     newPassword = newPassword.value;
     localStorage.setItem("NewPassword", newPassword);
 })
+*/
